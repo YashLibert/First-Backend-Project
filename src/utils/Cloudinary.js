@@ -1,7 +1,5 @@
 import { v2 as cloudinary } from "cloudinary";
 import fs from "fs"
-
-import { v2 as cloudinary } from 'cloudinary';
 import { response } from "express";
 
 // Configuration
@@ -13,7 +11,7 @@ cloudinary.config({
 
 
 
-const uploadoncloudinary =  async (localFilePath) => {
+const uploadOnCloudinary =  async (localFilePath) => {
     try {
         if(!localFilePath) return null
         // upload the file on cloudinary
@@ -29,4 +27,4 @@ const uploadoncloudinary =  async (localFilePath) => {
     }
 }
 
-export {uploadoncloudinary}
+export {uploadOnCloudinary}
